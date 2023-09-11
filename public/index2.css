@@ -1,0 +1,62 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: space-between;
+    background-color: #333;
+}
+
+.contenedor {
+    background-color: #222;
+    color: #fff;
+    padding: 20px;
+    margin: 10px;
+    width: 200px;
+    text-align: center;
+}
+
+img {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.info h2 {
+    font-size: 25px;
+    color: yellow;
+    margin: 10px 0;
+}
+
+.info p {
+    font-size: 25px;
+    color: white;
+    margin: 10px 0;
+}
+
+.info a.contacto {
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+    display: block;
+    margin: 10px 0;
+}
+
+.redes-sociales {
+    list-style: none;
+    padding: 0;
+    display: none;
+}
+
+.redes-sociales li {
+    margin: 5px 0;
+}
+
+.redes-sociales a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+.contenedor:hover .redes-sociales {
+    display: block;
+}
