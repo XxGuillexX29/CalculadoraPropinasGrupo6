@@ -24,20 +24,31 @@
       <a class="btn btn-light" href="./integrantes.html" role="button">Integrantes</a>
     </nav>
   </header>
-
-  <main>
+  <div class="p-3 mb-2 bg-dark text-white">
+  <main style="margin-top: 20px; ">
     <div class="calculadora-container">
       <h1 id="Titulo">Calculadora de Propinas</h1>
-      <div class="container">
-        <div class="box-izquierda">
-          <div class="input-container">
+        <div class="container"  style="display: flex; align-self: center; justify-content: space-around; margin: 0px 50px 0px 50px;" >
+          <div class="box" >
+          <div class="input-container" style="margin: 0px 0px 20px 0px;">
             <label>Cuenta</label>
             <div class="Cuenta-input-box">
               <div class="Icono-dinero">
                 <img src="img/icon-dollar.svg" >
-              </div>
               <input  inputmode="numeric" type="text" pattern="[0-9]+" placeholder="0" value="">
-
+            </div>
+            </div>
+          </div>
+          <div class="Personas-container">
+            <div class="Titulo-numero-personas">
+              <label>Cantidad de personas</label>
+            </div>
+            <div class="numero-personas-box">
+              <div class="icono persona">
+                <img src="img/icon-person.svg" alt="">
+              
+              <input  style="margin-bottom: 20px;" inputmode="numeric" type="text" pattern="[0-9]+" placeholder="">
+            </div>
             </div>
           </div>
           <div class="Propinas-container">
@@ -48,28 +59,13 @@
               <button id="boton-15%" class="boton-propina" value="0.15">15%</button>
               <button id="boton-25%" class="boton-propina" value="0.25">25%</button>
               <button id="boton-50%" class="boton-propina" value="0.5">50%</button>
-             <!- <input  type="text" inputmode="numeric" pattern="[0-9]+" name="custom"
-                placeholder="Otro"> 
             </div>
           </div>
-          <div class="Personas-container">
-            <div class="Titulo-numero-personas">
-              <label>Cantidad de personas</label>
-            </div>
-            <div class="numero-personas-box">
-              <div class="icono persona">
-                <img src="img/icon-person.svg" alt="">
-              </div>
-              <input  inputmode="numeric" type="text" pattern="[0-9]+" placeholder="">
-            </div>
-          </div>
-        </div>
-        <div class="box-derecha">
-          
+        </div>     
             <div class="output-box">
-        
+        <div>
                 <div class="titulo-propina">
-                  <h2 class="titulo-monto-propina">Monto de Propina</h2>
+                  <h2 class="titulo-monto-propina" >Monto de Propina</h2>
                   <p>/ persona</p>
                 </div>
                 <div class="propina-output">
@@ -78,7 +74,8 @@
                   </div>
                   <h3 id="Resultado-propina">0.00</h3>
                 </div>
-              
+              </div>
+            </div>
               <div class="total-box">
                 <div class="titulo-total">
                   <h2 >Total</h2>
@@ -90,20 +87,25 @@
                   </div>
                   <h3 id="resultado-total">0.00</h3>
                 </div>
-              </div>
-            </div>
-            <button id="boton-reiniciar">
-              Reiniciar
-            </button>
-          
-
-        </div>
-      </div>
+          </div>
     </div>
-
+  </div>
     <script src="../src/index.js"></script>
-
   </main>
+  <div class="row justify-content-center">
+    <button id="boton-reiniciar" class="col-2">
+      Reiniciar
+    </button>
+  </div>
+  <div style="margin-bottom: 250px;">
+  </div>
+  <footer>
+    <div class="d-flex align-items-center justify-content-center" style="margin-top: 10px;">
+      Derechos Reservados °2023 | Alumnos del Grupo 6
+      </div>
+  </footer>
+  </div>
+  
 </body>
 
 </html>
